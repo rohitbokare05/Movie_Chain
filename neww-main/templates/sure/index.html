@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stored Data</title>
+    </head>
+    <body>
+        <h1>Stored Data: {{ stored_data }}</h1>
+        <a href="{% url 'issue_ticket' event_id=1 %}">Issue Ticket</a>
+        <a href="{% url 'create_event' %}">Create Event</a>
+        {% comment %}
+        <a href="{% url 'buy_ticket' ticket_id=1 %}">Buy Ticket</a>
+        {% endcomment %}
+    </body>
+</html>

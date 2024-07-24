@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Buy Ticket</title>
+    </head>
+    <body>
+        <h1>Buy Ticket</h1>
+        <form method="post" action="{% url 'buy_ticket' ticket_id=ticket.id %}">
+            {% csrf_token %}
+            <input type="submit" value="Buy Ticket" />
+        </form>
+    </body>
+</html>

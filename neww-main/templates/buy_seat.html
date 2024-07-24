@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <div>BuySeat</div>
+        <table>
+            <tr>
+                <th>Seat Number</th>
+                <th>Price</th>
+                <th>Actions</th>
+                {%for seat in seats%}
+            </tr>
+
+            <tr>
+                <td>{{seat.seat_number}}</td>
+                <td>{{seat.price}}</td>
+                <td>
+                    <a href="{%url 'buy_seat' seat.id%}">Buy Seat</a>
+                </td>
+                {%endfor%}
+            </tr>
+        </table>
+    </body>
+</html>
