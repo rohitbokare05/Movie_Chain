@@ -14,7 +14,6 @@ from datetime import datetime
 
 # # @csrf_exempt
 # # def authenticate_user(request):
-#     print("Dhruvi")
 #     if request.method == "POST":
 #         try:
 #             data = json.loads(request.body)
